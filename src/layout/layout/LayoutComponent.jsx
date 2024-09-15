@@ -1,12 +1,14 @@
 import React from "react"
-import { Header, Content, Footer, Layout } from "antd/es/layout/layout"
+import Layout from "antd/es/layout/layout"
+import { Header, Footer, Content } from "antd/es/layout/layout"
+import { HeaderContent } from "../Header/HeaderContent"
 
 
-export const Layout = ({children}) => {
+export const LayoutComponent = ({children}) => {
     return (
         <Layout>
             <Header>
-
+                <HeaderContent />
             </Header>
             <Content>
                 {children}

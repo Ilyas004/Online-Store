@@ -2,16 +2,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { MainPage } from './pages/main/MainPage';
-import { Layout } from './layout/layout/Layout';
+import { LayoutComponent } from './layout/layout/LayoutComponent';
 
 function App() {
   return (
-    <Layout>
-      
+      <LayoutComponent>
         <Routes>
             <Route path={'/'} element={<MainPage/>}/>
         </Routes>
-    </Layout>
+      </LayoutComponent>
   );
 }
 
