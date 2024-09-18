@@ -9,9 +9,9 @@ const headTextStyle = {
 
 export const Footer = () => {
     return (
-        <div>
-            <Divider className="mb-0"/>
-            <div className="px-3 md:px-10 py-4 flex justify-between font items-start max-md:flex-col gap-3">
+        <div className="px-3 md:px-10 max-w-7xl m-auto w-full">
+            
+            <div className="py-4 flex justify-between font items-start max-md:flex-col gap-3">
                 <div className="grid gap-1">
                     <p style={headTextStyle}>Моя учетная запись</p>
                     <Link className={styled.linkTextStyle}>Войти</Link>
@@ -44,7 +44,7 @@ export const Footer = () => {
                     <Link className={styled.linkTextStyle}>Посмотреть на карте</Link>
                 </div>
             </div>
-            <p className="px-10">© 2016 - 2024 ONLINESTORE. Всегда высокое качество с</p>
+            <p>© 2016 - 2024 ONLINESTORE. Всегда высокое качество с</p>
         </div>
     )
 }

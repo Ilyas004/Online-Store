@@ -18,6 +18,7 @@ export const LayoutComponent = ({children}) => {
             <Content className="flex-grow">
                 {children}
             </Content>
+            <Divider className="m-0"/>
             <Footer/>
         </Layout>
     )

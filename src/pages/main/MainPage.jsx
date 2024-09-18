@@ -1,10 +1,13 @@
 import { Product } from "../../entitites/product/ui/Product"
+import { Block } from "../../shared/ui/Block"
+import { ListProduct } from "../../widgets/list_product/ui/ListProduct"
 
 export const MainPage = () => {
+
     return (
-        <div>
-            <Product />
-        </div>
+        <Block className={'my-4'}>
+            <ListProduct headText={'Популярные товары'}/>
+        </Block>
     )
 }
 
