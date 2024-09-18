@@ -4,6 +4,7 @@ import { Product } from "../../../entitites/product/ui/Product"
 import 'swiper/css';
 import { useEffect, useRef, useState } from "react";
 import { Button } from "antd";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const ListProduct = ({headText, loadProduct}) => {
     const swiperContainer = useRef(null)
@@ -14,9 +15,9 @@ export const ListProduct = ({headText, loadProduct}) => {
     }, [])
 
     return (
-        <div>
+        <div data-aos="fade-zoom-in" data-aos-delay="300" data-aos-offset="0" >
             <p className='text-3xl font-semibold text-gray-600 mb-4'>{headText}</p>
-            <div>
+            <div className="relative">
                 <Swiper
                     ref={swiperContainer}
                     slidesPerView={1}
@@ -33,10 +34,8 @@ export const ListProduct = ({headText, loadProduct}) => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div className="relative top-0 bottom-0 z-10">
-                    <Button className="ab" onClick={() => swiperContainer.current.swiper.slidePrev()}></Button>
-                    <Button onClick={() => swiperContainer.current.swiper.slideNext()}></Button>
-                </div>
+                <Button className="absolute -left-3 bottom-1/2 z-10 px-2 max-md:hidden" shape="circle" onClick={() => swiperContainer.current.swiper.slidePrev()}><ChevronLeft /></Button>
+                <Button className="absolute -right-3 bottom-1/2 z-10 px-2 max-md:hidden"  shape="circle"  onClick={() => swiperContainer.current.swiper.slideNext()}><ChevronRight /></Button>
             </div>
         </div>
         

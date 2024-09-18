@@ -1,4 +1,4 @@
-import { Product } from "../../entitites/product/ui/Product"
+
 import { Block } from "../../shared/ui/Block"
 import { ListProduct } from "../../widgets/list_product/ui/ListProduct"
 
