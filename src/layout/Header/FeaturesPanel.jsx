@@ -8,7 +8,6 @@ const { Search } = Input;
 const onSearch = (value, _e, info) => console.log(info?.source, value);
 
 export const FeaturesPanel = () => {
-    const navigation = useNavigate()
 
     return (
         <div className="bg-purple-200 shadow">

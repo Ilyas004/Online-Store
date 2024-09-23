@@ -1,6 +1,7 @@
 import { Divider } from "antd"
 import { Link } from "react-router-dom"
 import styled from './footer.module.css'
+import { loginRoute, registerRoute } from "../../utils/staticRoute"
 
 const headTextStyle = {
     fontSize: '20px',
@@ -14,8 +15,8 @@ export const Footer = () => {
             <div className="py-4 flex justify-between font items-start max-md:flex-col gap-3">
                 <div className="grid gap-1">
                     <p style={headTextStyle}>Моя учетная запись</p>
-                    <Link className={styled.linkTextStyle}>Войти</Link>
-                    <Link className={styled.linkTextStyle}>Создать учетную запись</Link>
+                    <Link to={loginRoute} className={styled.linkTextStyle}>Войти</Link>
+                    <Link to={registerRoute} className={styled.linkTextStyle}>Создать учетную запись</Link>
                 </div>
 
                 <div className="grid gap-1">

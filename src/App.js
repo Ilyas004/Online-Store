@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { LoginPage } from './pages/login/LoginPage';
+import { RegisterPage } from './pages/register/RegisterPage';
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
         <Routes>
             <Route path={'/'} element={<MainPage/>}/>
             <Route path={'/login'} element={<LoginPage/>}/>
+            <Route path={'/register'} element={<RegisterPage/>}/>
         </Routes>
       </LayoutComponent>
   );
